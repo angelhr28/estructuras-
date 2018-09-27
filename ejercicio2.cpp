@@ -17,7 +17,7 @@ int main () {
 	cin >> numero;
 
 	// con array
-	DatosPersona persona = new DatosPersona[20];
+	DatosPersona *persona = new DatosPersona[20];
 	for (int i = 0; i < numero; ++i)
 	{
 		cout << "ingrese codigo:";

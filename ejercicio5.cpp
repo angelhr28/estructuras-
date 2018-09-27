@@ -10,7 +10,7 @@ struct DatosPersona
 	int edad;
 };
 
-int nuevaEdad(int);
+void nuevaEdad(int);
 void ingresarDatos(int);
 void imprimirDatos(int);
 
@@ -24,10 +24,9 @@ int main () {
 	ingresarDatos(numero);
 	imprimirDatos(numero);
 
-	for (int i = 0; i < numero; ++i)
-	{
-		persona[i].edad = nuevaEdad(persona[i].edad);
-	}
+	nuevaEdad(numero);
+	imprimirDatos(numero);
+	
 	
 	return 0;
 
@@ -57,6 +56,9 @@ void imprimirDatos(int numero) {
 		cout << persona[i].edad;
 	}
 }
-int nuevaEdad(int edad) {
-	return edad +20;
+void nuevaEdad(int numero) {
+	for (int i = 0; i < numero; ++i)
+	{
+		persona[i].edad = persona[i].edad + 20;
+	}
 }

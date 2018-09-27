@@ -32,7 +32,7 @@ int main () {
 
 void ingresarDatos(int numero) {
 	// con array
-	for (int i = 0; i < numero; ++i)
+	for (int i = 0; i < numero; i++)
 	{
 		cout << "ingrese codigo:";
 		getline(cin, persona[i].codigo);
@@ -49,7 +49,7 @@ void ingresarDatos(int numero) {
 }
 
 void imprimirDatos(int numero) {
-	for (int i = 0; i < numero; ++i)
+	for (int i = 0; i < numero; i++)
 	{
 		cout << persona[i].codigo;
 		cout << persona[i].nombre;

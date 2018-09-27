@@ -14,7 +14,7 @@ int main () {
 
 	// sin punteros
 	DatosPersona persona1[20];
-	for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 5; i++)
 	{
 		cout << "ingrese nombre:";
 		getline(cin, persona1[i].nombre);
@@ -24,7 +24,7 @@ int main () {
 		cout << "ingrese edad:";
 		cin >> persona1[i].edad;
 	}
-	for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 5; i++)
 	{
 		cout << persona1[i].nombre;
 		cout << persona1[i].apellido;
@@ -33,7 +33,7 @@ int main () {
 
 	// con punteros
 	DatosPersona *persona2 = new DatosPersona[20];
-	for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 5; i++)
 	{
 		cout << "ingrese nombre:";
 		getline(cin, persona2[i].nombre);
@@ -44,7 +44,7 @@ int main () {
 		cin >> persona2[i].edad;
 	}
 
-	for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 5; i++)
 	{
 		cout << persona2[i].nombre;
 		cout << persona2[i].apellido;
@@ -53,7 +53,7 @@ int main () {
 
 	// con array
 	DatosPersona *persona3 = new DatosPersona[20];
-	for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 5; i++)
 	{
 		cout << "ingrese nombre:";
 		getline(cin, persona3[i].nombre);
@@ -64,7 +64,7 @@ int main () {
 		cin >> persona3[i].edad;
 	}
 
-	for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 5; i++)
 	{
 		cout << persona3[i].nombre;
 		cout << persona3[i].apellido;
